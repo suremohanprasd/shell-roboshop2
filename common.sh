@@ -58,7 +58,7 @@ app_setup(){
         useradd --system --home /app --shell /sbin/nologin --comment "roboshop system user" roboshop
         VALIDATE $? "Adding System user Roboshop"
     else
-        echo -e "$Y System user Roboshop already Exits... Skipping $N"
+        echo -e "System user Roboshop already Exits... $Y Skipping $N"
     fi
 
     mkdir -p /app  &>>$LOG_FILE
